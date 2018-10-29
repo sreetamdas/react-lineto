@@ -3,11 +3,13 @@ import React, { Component, PureComponent } from "react";
 
 const defaultAnchor = { x: 0.5, y: 0.5 };
 const defaultBorderColor = "#f00";
+const defaultInnerColor = "#00ff00";
 const defaultBorderStyle = "solid";
 const defaultBorderWidth = 1;
 
 const optionalStyleProps = {
 	borderColor: PropTypes.string,
+	innerColor: PropTypes.string,
 	borderStyle: PropTypes.string,
 	borderWidth: PropTypes.number,
 	className: PropTypes.string,
@@ -226,15 +228,14 @@ export class Line extends PureComponent {
 		};
 
 		const progressStyle = {
-			// position: "absolute",
-			// top: `${y0}px`,
-			// left: `${x0}px`,
-			// width: `${length}px`,
-			zIndex: Number.isFinite(this.props.zIndex) ? String(this.props.zIndex - 1) : "2",
-			// transform: `rotate(${angle}deg)`,
+			position: "absolute",
+			top: `${y0}px`,
+			left: `${x0}px`,
+			zIndex: Number.isFinite(this.props.zIndex) ? String(this.props.zIndex + 1) : "2",
+			transform: `rotate(${angle}deg)`,
 			// Rotate around (x0, y0)
-			// transformOrigin: "0 0",
-			width: `${progress}%`
+			transformOrigin: "0 0",
+			width: `${length * (progress / 100)}px`
 			// color: this.props.progressColor || "#00FF00"
 		};
 
@@ -245,9 +246,9 @@ export class Line extends PureComponent {
 		};
 
 		const defaultProgressStyle = {
-			borderColor: this.props.borderColor || "#00FF00",
-			borderStyle: this.props.borderStyle || "solid",
-			borderWidth: this.props.borderWidth * 2 || 1
+			borderColor: this.props.innerColor || defaultInnerColor,
+			borderStyle: this.props.borderStyle || defaultBorderStyle,
+			borderWidth: this.props.borderWidth || defaultBorderWidth
 		};
 
 		const props = {
@@ -270,9 +271,8 @@ export class Line extends PureComponent {
 						this.el = el;
 					}}
 					{...props}
-				>
-					<div {...progressProps} />
-				</div>
+				/>
+				<div {...progressProps} />
 			</div>
 		);
 	}

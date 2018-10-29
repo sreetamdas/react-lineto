@@ -6,7 +6,7 @@ class App extends React.Component {
 		console.log("updated");
 	}
 	render() {
-		return <Line x0={100} y0={150} x1={450} y1={550} progress={70} borderWidth={6} />;
+		return <Line x0={100} y0={150} x1={450} y1={550} progress={99} borderWidth={2} />;
 	}
 }
 

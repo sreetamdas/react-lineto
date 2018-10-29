@@ -1,7 +1,7 @@
 {
-  "name": "react-lineto",
-  "version": "3.1.2",
-  "author": "Kevin DeLoach <kdeloach@gmail.com>",
+  "name": "react-progress-line",
+  "version": "1.0.0",
+  "author": "Sreetam Das <sreetamdas@gmail.com>",
   "license": "MIT",
   "main": "dist/react-lineto.js",
   "scripts": {
@@ -10,18 +10,18 @@
     "lint": "eslint --ext js,jsx ./src",
     "test": "npm run lint"
   },
-  "homepage": "https://github.com/kdeloach/react-lineto",
+  "homepage": "https://github.com/sreetamdas/react-progress-line",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kdeloach/react-lineto.git"
+    "url": "https://github.com/sreetamdas/react-progress-line.git"
   },
   "bugs": {
-    "url": "https://github.com/kdeloach/react-lineto/issues"
+    "url": "https://github.com/sreetamdas/react-progress-line/issues"
   },
   "dependencies": {
     "babel-polyfill": "6.26.0",
     "prop-types": "15.6.0",
-    "react": "16.2.0",
+    "react": "16.6.0",
     "react-dom": "16.6.0"
   },
   "devDependencies": {
