@@ -1,20 +1,16 @@
 language: node_js
-
 node_js:
 - node
-
 install:
 - yarn install
-
 script:
 - yarn build
 - yarn test
-
 deploy:
   provider: npm
-  email: kdeloach@gmail.com
+  email: sreetamdas@gmail.com
   api_key:
-    secure: npvuqO8zvpJHQxjkcJ5tCdlRRi+aSVhMVH0xV0YpD4n4MmpYXi4XCXjDr473fm2mcZrPqMx6ojfe48G5A91x7/MvGrhYDG0AiCvEo6nkt0flw7+daWV9JeXRvsENTerxAtb7ln4AGH/91ZgeYvtIeTCnERp8IWGI/QHSCUnzvJDzIjHUaZ3GC18/ijckBQEtlsC2QOQ+BXORxTSSxyYDKkYMu8jkShEqO4zNSxLaoii5sykLM7fJ4qKYv4k4x59/HYvUlxCIfJEB94EBD+TAp2MM3DKlTW8USMM13uVwm3aak1k/Vs/sH1jHlnphZEKOhlYGteTd3RqpQeF3jKH7+K1K186h4fFgjpJYhizTiT2ZrdvDnatn+EJqcoO0ZIOXtN6dVJf3WgecHjk2yoiMIS2uRSL/VeNgDZ+S4RiKj3qC042wHHacGi0SCdPfQNRplRsE1z1mxLTuMmCTb61T8d6oJhPfK7qiF4FOTiTAVptyMJiH9n3XpOZdOeYHSr+Uh5TDPMhIYKxQdaSEhsNd677wEcCI4uy75+iIVCP1wUnpL8uQFzOK1O9GK5nrtSMC6JzYfohYFSdwx5f7G9bclleAtrd1v9wgUcBaHeWsn0bf1F6GBX54RNnj1uI8uJ1huZbcktpWfslgERC+4SpJ8WKu/0bBDHl8gSzlrPS9nIk=
+    secure: MWi8VGqUHeQ1yS/t5raaZAsjjAL6dcZSZ766PsVtF3OSQjh3b9+cbUMyMfrbXOMqva3pOsT7duTkGMuYOuQv7r2I7oa07Ys+I5jhIeyBe5llnORxFxFvKb3Q4nGQfhuP3EC5d+yladKmmsQgG1/yZXv1GqT3SE2Zs6WQakwl7SSOzgdCWwrPh3SN2T6e3tjkvDkTDgaPsGsNuNc85GFHLIETJErvLUMQC8/hUi2TUGs/Be+SoxXBRGF4GbDnTAlySehKYuXxrzRiLa1NzK0XtO3XJ61YboTaSY1y1odDJ8dHnbbFli6hZCx6aWmzLNOjvj4d6DCe9q9XYVPywSwkoh7zUv4bPw7TaDqtLhTOIrfSamjK4a2uxY5djnam+9vOgCLxsSr9jbwdlY6aWG4yV0tGDPznBZXWwuAsmDD+xXoT1hO+n03u9aK7eEwVjB1DO4E1WOVN9cWsYof1TyRd9DGhd/478vYR4g+BYDR7/lhDbevgSZmkQsqPzybIWVuJSsdL+x+h9rLrHtIhvkIqs+QcZUioB09Z6j5gJ8qDuZDOY/8kW+b23Er5pP223WSoydJYasssnsz20jU0t+USde8jD19w2CdWfJl9CmGrNOs3hi9utwgJdxtfsQ1AlOndr91vSr27uyM5PujNmd/3KC2b0F8kzhEQB4f6wXLpxZo=
   on:
     tags: true
-    repo: kdeloach/react-lineto
+    repo: sreetamdas/react-progress-line
