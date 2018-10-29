@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import React, { Component, PureComponent } from "react";
+import React, { PureComponent } from "react";
 
-const defaultAnchor = { x: 0.5, y: 0.5 };
+// const defaultAnchor = { x: 0.5, y: 0.5 };
 const defaultBorderColor = "#f00";
 const defaultInnerColor = "#00ff00";
 const defaultBorderStyle = "solid";
