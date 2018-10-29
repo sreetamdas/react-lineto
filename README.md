@@ -2,7 +2,7 @@
 
 Draw a progress line between two elements in React.
 
-[![Build Status](https://travis-ci.org/kdeloach/react-lineto.svg?branch=master)](https://travis-ci.org/kdeloach/react-lineto)
+[![Build Status](https://api.travis-ci.org/sreetamdas/react-progress-line.svg?branch=master)](https://travis-ci.org/sreetamdas/react-progress-line)
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ Browse to [localhost:4567](http://localhost:4567).
 #### Example
 
 ```
-import { Line } from 'react-lineto';
+import { Line } from 'react-progress-line';
 
 function render() {
     return (
