@@ -163,7 +163,7 @@
         "no-shadow-restricted-names": "error",
         "no-spaced-func": "error",
         "no-sync": "error",
-        "no-tabs": "error",
+        "no-tabs": "off",
         "no-template-curly-in-string": "error",
         "no-ternary": "off",
         "no-throw-literal": "error",
@@ -219,7 +219,7 @@
         "quote-props": "off",
         "quotes": [
             "error",
-            "single"
+            "double"
         ],
         "radix": "error",
         "require-await": "error",
